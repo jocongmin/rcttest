@@ -2,15 +2,14 @@ import 'babel-core/polyfill'
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import App from './containers/App'
+import Home from './components/home.jsx'
 import configureStore from './store/configureStore'
-import 'todomvc-app-css/index.css'
 
 const store = configureStore()
 
 render(
   <Provider store={store}>
-    <App />
+    <Home />
   </Provider>,
   document.getElementById('root')
 )
