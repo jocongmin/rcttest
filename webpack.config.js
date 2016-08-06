@@ -10,12 +10,12 @@ module.exports = {
     output: {
         path: path.join(__dirname, ''),
         filename: 'bundle.js',
-        publicPath: './'
+        publicPath: ''
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
+        new webpack.NoErrorsPlugin()
     ],
     module: {
         loaders: [{
@@ -27,6 +27,9 @@ module.exports = {
             test: /\.css?$/,
             loaders: ['style', 'raw'],
             include: __dirname
+        }, {
+            test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+            loader: 'url-loader?limit=50000&name=[path][name].[ext]'
         }]
     }
 }
@@ -46,7 +49,7 @@ if (fs.existsSync(reduxSrc) && fs.existsSync(reduxNodeModules)) {
         }
         // Compile Redux from source
     module.exports.module.loaders.push({
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         loaders: ['babel'],
         include: reduxSrc
     })
