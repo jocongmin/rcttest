@@ -1,0 +1,71 @@
+#order-detail-info {
+    color: $flight;
+    background: white;
+    margin-top:3px;
+    $fc: #4b4b4b;
+    .item {
+        padding: 10px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .fh {
+        color: #f84343;
+    }
+    .tk {
+        color: #f89c43;
+    }
+    .wl {
+        color: #4387f8;
+    }
+    .wl-info {
+        color: $flight;
+        padding:10px;
+        margin-bottom: -10px;
+        border-top: 1px solid #f2f2f2;
+        margin-top: 10px;
+        overflow: hidden;
+        .word{
+            color:$fweight;
+        }
+    }
+    .s-wl {
+        @extend .bg-right-more;
+        display: inline-block;
+        zoom: 0.6;
+        opacity: 0.4;
+        float: right;
+        transform: rotate(270deg);
+        position: relative;
+        top: 2px;
+        right: 3px;
+    }
+    .s-on {
+        transform: rotate(450deg)!important;
+    }
+    .icon-s {
+        display: inline-block;
+        @extend .bg-dingdan_a;
+        transform: scale(0.6);
+        margin: -10px;
+        margin-right: -4px;
+        position: relative;
+        top: 3px;
+    }
+    .icon-t {
+        @extend .bg-dingdan_d;
+        display: inline-block;
+        transform: scale(0.7);
+        margin: -7px;
+        margin-right: 1px;
+        position: relative;
+        top: 2px;
+    }
+    .icon-d {
+        @extend .bg-dingdan_aa;
+        display: inline-block;
+        transform: scale(0.6);
+        margin: -11px;
+        margin-right: -4px;
+        position: relative;
+        top: 3px;
+    }
+}

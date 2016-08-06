@@ -1,0 +1,22 @@
+#act-container {
+    padding-bottom: 100px;
+    background: #f8dee4;
+    #prolist {
+        padding: 10px;
+        ul {
+            width: 100.1%;
+        }
+        li {
+            box-sizing: border-box;
+            width: 50%;
+            border: none!important;
+            border-right: 1px solid #f8dee4!important;
+            border-bottom: 1px solid #f8dee4!important;
+        }
+    }
+    .pro-word {
+        padding: 10px 10px 0;
+        color: $theme;
+        text-shadow: 0 1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px 1px 0 #fff;
+    }
+}

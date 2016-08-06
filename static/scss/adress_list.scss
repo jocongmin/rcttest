@@ -1,0 +1,95 @@
+#adress-list {
+    font-size: 15px;
+    background: white;
+    color: #000;
+    .item {
+        padding: 15px 0 0 0;
+        border-bottom:$bcolr;
+    }
+    .tit {
+        padding:0 10px;
+        margin-bottom: 6px;
+        .consignee{
+            color:$fnormal;
+        }
+    }
+    .adres{
+        padding:0 10px;
+        color:$flight;
+        font-size:13px;
+        margin-bottom: 6px;
+    }
+    .set-address{
+        color:$fnormal;
+        padding:13px 10px;
+        background:#fff6f7;
+        border-bottom:1px solid $bcolr;
+        .set-default{
+            position: relative;
+            padding-left:23px;
+            i{
+                position: absolute;
+                left:0;
+                top:1px;
+
+            }
+        }
+    }
+    .update-delete{
+        label{
+            padding-left:3px;
+            &:nth-of-type(1){
+                margin-right:10px;
+            }
+        }
+        i{
+            display: inline-block;
+            position:relative;
+            top:0;
+        }
+        .set-icon{
+            @extend .bg-update;
+            zoom: 0.6;
+        }
+        .delete-icon{
+            @extend .bg-delete;
+            zoom: 0.55;
+        }
+    }
+    .item-left {
+        flex: 10;
+    }
+    .phone {
+        text-align: right;
+        color:#9b9b9b;
+    }
+    .item-right {
+        position: relative;
+        em {
+            position: absolute;
+            top: 51px;
+            right: 5px;
+        }
+    }
+}
+.add-btn{
+    width:130px;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:15px;
+    margin:auto;
+    background:$theme;
+    color:#ffffff;
+    text-align: center;
+    font-size:15px;
+    padding:7px 0;
+    border-radius:5px;
+    i{
+        display: inline-block;
+        @extend .bg-add-circle;
+        zoom: 0.5;
+        position:relative;
+        top:5px;
+    }
+}

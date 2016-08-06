@@ -1,0 +1,103 @@
+#change-seller-list {
+    padding: 0 10px;
+    font-size: 12px;
+    color: $fnormal;
+    $four: 14px;
+    .sidcheck {
+        margin-right: 10px;
+    }
+    .item {
+        padding: 15px 0;
+        position: relative;
+        align-items: center;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    img {
+        margin-right: 10px;
+        width: 65px;
+    }
+    h3 {
+        position: relative;
+        top: 5px;
+        font-size: $four;
+        font-weight: bold;
+        color: $fweight;
+        em {
+            font-size: 12px;
+            font-weight: normal;
+            color: $flight;
+            margin-left: 15px;
+        }
+    }
+    .icon {
+        @extend .bg-change-seller-loca;
+        display: inline-block;
+        zoom: 0.8;
+        position: relative;
+        top: 5px;
+    }
+    .info {
+        margin-bottom: 10px;
+        .right {
+            position: relative;
+            .loca {
+                position: absolute;
+                bottom: 6px;
+                width: 100%;
+                align-items: center;
+                em {
+                    float: right;
+                    position: relative;
+                    top: 4px;
+                }
+                span {
+                    overflow: hidden;
+                    margin-right: 10px;
+                    margin-left: 5px;
+                    position: relative;
+                    top: 4px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    .pj {
+        ul {
+            flex-wrap: wrap;
+            width: 104%;
+            li {
+                display: inline-block;
+                float: left;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                text-align: center;
+                padding: 5px 7px;
+                border: 1px solid #ddd;
+                margin: 5px 0;
+                margin-right: 4%;
+                min-width: 74px;
+            }
+        }
+        .hide {
+            text-align: center;
+            i {
+                @extend .bg-change-seller-xiala;
+                display: inline-block;
+                margin-top: 8px;
+                margin-bottom: -7px;
+                position: relative;
+                left: -15px;
+            }
+        }
+    }
+    .gw-icon {
+        position: absolute;
+        background: url(../img/my-guwen-em.png) no-repeat;
+        width: 75px;
+        height: 78px;
+        right: -10px;
+        top: 0;
+        background-size: contain;
+    }
+}

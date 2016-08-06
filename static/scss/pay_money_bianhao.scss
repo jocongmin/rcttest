@@ -1,0 +1,25 @@
+#pay-money-bianhao{
+	color: $aaa;
+	font-size: 14px;
+	padding:10px;
+	margin-bottom: 10px;
+	background: #fffaf4;
+	color:$fnormal;
+	.num{
+		flex:1.5;
+	}
+	.time{
+		text-align: right;
+		color:$flight;
+	}
+	.seller{
+		flex:2;
+		color:$fweight;
+	}
+}
+#submit-buypro-list .frei{
+	width: 101.5%;
+}
+#pay-money-bianhao+#pay-money-bianhao{
+	border-top:$bor;
+}

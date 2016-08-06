@@ -1,0 +1,210 @@
+.empty-bt {
+    margin-bottom: 30px;
+}
+
+#h-panel {
+    height: 206px;
+    position: relative;
+    background: {
+        image: url("../img/tou-bg.png");
+        repeat: no-repeat;
+        size: 100% 100%;
+    }
+    text-align: center;
+    .pic-style {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        margin-top: 30px;
+        img {
+            width: 74px;
+            height: 74px;
+            margin: 3px;
+            vertical-align: middle;
+            border-radius: 100%;
+        }
+    }
+    .user-name {
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .user-money {
+        position: absolute;
+        bottom: 5px;
+        a {
+            color: #ffffff;
+            &:nth-of-type(3) {
+                span {
+                    border-right: none;
+                }
+            }
+            label {
+                display: block;
+                font-size: 20px;
+            }
+            span {
+                display: block;
+                font-size: 13px;
+                border-right: 1px solid #ffffff;
+            }
+        }
+    }
+}
+
+#c-panel {
+    background: #ffffff;
+    .allOrder {
+        display: block;
+        width: auto;
+        padding: 11px 0;
+        // height: 36px;
+        // line-height: 36px;
+        margin: 0 15px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $fnormal;
+        border-bottom: 1px solid $bcolr;
+        i {
+            @extend .bg-gt;
+            display: inline-block;
+            opacity: 0.4;
+            vertical-align: middle;
+            position: relative;
+            top: 5px;
+            float: right;
+            zoom: 0.5;
+        }
+    }
+    .orderItem {
+        a {
+            display: inline-block;
+            width: 20%;
+            text-align: center;
+            float: left;
+            font-size: 11px;
+            color: $fnormal;
+            padding: 14px 0 10px 0;
+        }
+        .order-tag {
+            position: relative;
+            i {
+                display: inline-block;
+                width: 18px;
+                height: 15px;
+                zoom: 0.5;
+            }
+            em {
+                display: inline-block;
+                background: $theme;
+                color: #ffffff;
+                padding: 3px;
+                line-height: 14px;
+                font-size: 12px;
+                border-radius: 10px;
+                width: 25px;
+                position: absolute;
+                left: 50%;
+                top: 5px;
+                margin-left: -1px;
+                -webkit-transform: scale(0.7);
+            }
+            .tag01 {
+                @extend .bg-mine-xa-daifukuan;
+            }
+            .tag02 {
+                @extend .bg-mine-xb-daifahuo;
+            }
+            .tag03 {
+                @extend .bg-mine-xc-daishouhuo;
+            }
+            .tag04 {
+                @extend .bg-mine-xd-pingjia;
+            }
+            .tag05 {
+                @extend .bg-mine-xe-tuikuan;
+            }
+            span {
+                display: block;
+                font-size: 13px;
+                color: $fnormal;
+            }
+        }
+    }
+}
+#shopmanage-name~#c-panel{
+    margin-bottom:5px;
+}
+
+#b-panel {
+    margin-top: 8px;
+    background: #ffffff;
+    margin-bottom: 64px;
+    a {
+        display: inline-block;
+        width: 25%;
+        float: left;
+        font-size: 11px;
+        color: $fnormal;
+        text-align: center;
+        padding: 18px 0;
+        border-width: 0 1px 1px 0;
+        border-style: solid;
+        border-color: $bcolr;
+        &:nth-of-type(4n) {
+            border-right: none;
+        }
+        i {
+            display: inline-block;
+            width: 27px;
+            height: 29px;
+        }
+        span {
+            display: block;
+            margin-top: 5px;
+            font-size: 13px;
+        }
+        .icon01 {
+            @extend .bg-mine-ya-chongzhi;
+            zoom: 0.45;
+        }
+        .icon02 {
+            @extend .bg-mine-yb-wodeshoucang;
+            zoom: 0.45;
+        }
+        .icon03 {
+            @extend .bg-mine-yc-zhuanshuguwen;
+            zoom: 0.45;
+        }
+        .icon04 {
+            @extend .bg-mine-yd-shouhuodizhi;
+            zoom: 0.45;
+        }
+        .icon05 {
+            @extend .bg-mine-za-chengweifenxiaoshang;
+            zoom: 0.5;
+        }
+        .icon06 {
+            @extend .bg-mine-zb-wodedianpu;
+            zoom: 0.45;
+        }
+        .icon07 {
+            background: url("../img/update-password.png") no-repeat;
+            background-size: 100%;
+        }
+        .icon08 {
+            @extend .bg-mine-zc-zhanghaoshezhi;
+            zoom: 0.48;
+        }
+        .icon09 {
+            @extend .bg-mine-zd-yijianfankui;
+            zoom: 0.45;
+        }
+    }
+    .borNo {
+        border-bottom: none;
+    }
+}

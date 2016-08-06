@@ -1,0 +1,14 @@
+.select-style {
+    background: #ffffff;
+}
+.p-text {
+    li {
+        border-bottom: 1px solid $bcolr;
+        a {
+            font-size: 14px;
+            color: $fnormal;
+            padding:15px 10px;
+            display: block;
+        }
+    }
+}

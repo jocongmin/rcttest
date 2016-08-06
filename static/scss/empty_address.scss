@@ -1,0 +1,22 @@
+#empty-address {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-100%);
+    margin: auto;
+    text-align: center;
+}
+.empty-icon {
+	display:inline-block;
+	width:57px;
+	height:50px;
+	background:url(../img/empty-address.png) no-repeat;
+	background-size:100% 100%;
+}
+
+.empty-text {
+    font-size: 14px;
+    color: $flight;
+    text-align: center;
+}

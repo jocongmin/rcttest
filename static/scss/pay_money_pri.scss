@@ -1,0 +1,81 @@
+#pay-money-pribar {
+    background: $pinktwo;
+    font-size: 12px;
+    margin-bottom: 5px;
+    em {
+        color: $theme!important;
+        float: right;
+        font-size: 14px;
+    }
+    .d1 {
+        color: $fnormal;
+        padding: 9px 10px;
+    }
+    .d2 {
+        color: $fnormal;
+        text-align: right;
+        padding: 10px;
+        em {
+            color: $red;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .ps-d2 {
+        @extend .bg-dingdan_d;
+    }
+    .ps-d1 {
+        @extend .bg-p-icon-car;
+    }
+    .icon {
+        display: inline-block;
+        float: left;
+        position: relative;
+        top: -3px;
+        zoom: 0.72;
+        margin-right: 10px;
+    }
+    .icon1 {
+        @extend .icon;
+        ;
+        @extend .bg-dl-item;
+    }
+    .icon3 {
+        opacity: 0.8;
+        @extend .icon;
+        ;
+        @extend .bg-yh-item;
+    }
+}
+
+#order-detail-allmoney {
+    text-align: right;
+    color: #4b4b4b;
+    background: $pinktwo;
+    padding: 4px 0 10px 0;
+    margin: 0 10px;
+    border-top: $bor;
+    .p {
+        font-size: 14px;
+        color: $fweight;
+    }
+    .themef {
+        font-size: 21px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.item-bar {
+    height: 40px;
+    line-height: 42px;
+    padding: 0 10px;
+    color: $theme;
+    font-size: 14px;
+    background: white;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    i {
+        @extend .theme-right;
+    }
+}

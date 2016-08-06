@@ -1,0 +1,40 @@
+#order-detail-allinfo {
+    background: white;
+    position: relative;
+    color:$fnormal;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    .item {
+        padding: 5px 10px;
+        a{
+            color:#4387f8;
+            font-weight:bold;
+            font-family: arial;
+            text-decoration:underline;
+        }
+    }
+    .span {
+        color: $red;
+    }
+    .copy {
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        color: $red;
+        text-decoration: underline;
+    }
+}
+.reback-btn-box{
+    padding:10px;
+    margin-bottom:-10px;
+    margin-top:10px;
+    border-top:$bor;
+    .reback-btn{
+        padding:5px 15px;
+        background:#dad7d7;
+        color:white;
+        float:right;
+        border-radius:5px;
+        font-size:14px;
+    }
+}

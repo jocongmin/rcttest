@@ -1,0 +1,9 @@
+#myadviser-index-top { position: relative; }
+#myadviser-index-top .lunbo { position: relative; text-align: center; height: 170px; background: url(../img/mygw-top-bg.png) no-repeat; background-size: 100% 100%; }
+#myadviser-index-top .tx { width: 70px; border-radius: 100%; border: 5px solid #ffffff; height: 70px; }
+#myadviser-index-top .name { position: absolute; bottom: 15px; width: 100%; font-size: 14px; font-weight: bold; color: #888888; }
+#myadviser-index-top .tx-box { position: absolute; top: 16px; width: 100%; }
+#myadviser-index-top .pic { display: inline-block; position: relative; }
+#myadviser-index-top .pj-list { width: 100%; display: inline-block; height: 62px; position: relative; top: 100px; overflow: hidden; overflow-x: scroll; }
+#myadviser-index-top .pj-list ul { height: 100%; width: auto; padding-left: 10px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+#myadviser-index-top .pj-list ul li { float: left; background: rgba(146, 143, 142, 0.6); color: white; font-size: 12px; padding: 5px 10px; margin-right: 15px; border-radius: 17px; margin-bottom: 5px; }

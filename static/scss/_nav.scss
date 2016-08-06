@@ -1,0 +1,99 @@
+/* @import "bg.scss"; */
+
+#nav-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: $bor;
+    z-index: 999;
+    box-sizing: border-box;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    height: $footerHeight;
+    ul {
+        li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            font-size: 12px;
+            em {
+                display: inline-block;
+                position: relative;
+                zoom: 0.36;
+                left: 2px;
+                margin-bottom: -7px;
+            }
+            a {
+                color: $flight;
+            }
+        }
+        .index {
+            em {
+                @extend .bg-home;
+            }
+            .on {
+                @extend .bg-home-on;
+            }
+        }
+        .ident {
+            em {
+                @extend .bg-type;
+                position: relative;
+                left: 5px;
+            }
+            .on {
+                @extend .bg-type-on;
+            }
+        }
+        .act {
+            em {
+                @extend .bg-nav-act-un;
+                position: relative;
+                left: 5px;
+            }
+            .on {
+                @extend .bg-nav-act;
+            }
+        }
+        .buycar {
+            i {
+                position: absolute;
+                display: inline-block;
+                padding: 2px;
+                border-radius: 100%;
+                min-width: 20px;
+                height: 20px;
+                color: white;
+                text-align: center;
+                line-height: 20px;
+                right: -7px;
+                zoom: 2;
+                top: -4px;
+                background: $theme;
+                max-width: 30px;
+            }
+            em {
+                @extend .bg-embuycar;
+            }
+            .on {
+                @extend .bg-embuycar-on;
+            }
+        }
+        .me {
+            em {
+                @extend .bg-my
+            }
+            .on {
+                @extend .bg-my-on
+            }
+        }
+        .on {
+            color: $red;
+            a {
+                color: $red;
+            }
+        }
+    }
+}

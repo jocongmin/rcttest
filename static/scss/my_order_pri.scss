@@ -1,0 +1,13 @@
+#my-order-pri{
+	text-align: right;
+	color:$fnormal;
+	line-height: 40px;
+	background: white;
+	padding-right: 10px;
+	border-bottom:$bor;
+	.i{
+		color:$red;
+		font-weight: bold;
+		font-size:15px;
+	}
+}

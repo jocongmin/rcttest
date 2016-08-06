@@ -1,0 +1,92 @@
+/* @import "reset.scss";
+@import "nav.scss";
+@import "bg.scss";
+@import "list_banner_pro.scss";
+@import "list_nav_list.scss";
+@import "list_prolist.scss";
+@import "list_aside.scss"; */
+
+main {
+    background: #e1e1e1;
+}
+
+.keep-top {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* body{
+    overflow-y:hidden;
+} */
+
+.rotateBox {
+    background: #e1e1e1;
+    margin-top:1px;
+}
+
+.still-top {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#mainbox {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+    background: transparent;
+}
+
+.noevent {
+    pointer-events: none;
+}
+
+.event {
+    pointer-events: auto;
+}
+
+.rotate {
+    overflow: hidden;
+    -webkit-perspective: 800;
+    position: absolute!important;
+}
+
+.rotate #rotateTar {
+    overflow: hidden;
+}
+
+#mainbox[style]>#rotateTar {
+    -webkit-transform: rotateY(-55deg) translate3d(180px, 0, 0);
+}
+
+.rotate>#rotateTar {
+    -webkit-transition: -webkit-transform .35s ease-out;
+    -webkit-transform-origin: right top;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-fill-mode: none;
+    -webkit-perspective-origin: center 0;
+    -webkit-backface-visibility: hidden;
+}
+
+#list-aside>#sidTar {
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .35s ease-out;
+    -webkit-transform-origin: left 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation-fill-mode: both;
+    -webkit-transform: rotateY(45deg) translate3d(-180px, 0, 0);
+}
+
+.on>#sidTar {
+    position: relative;
+    -webkit-transform: none!important;
+}

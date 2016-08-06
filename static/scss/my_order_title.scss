@@ -1,0 +1,26 @@
+#my-order-title{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	background: white;
+	border-bottom: 1px solid #ddd;
+	white-space: nowrap;
+	overflow-x: scroll;
+	span{
+		width: 80px;
+		display: inline-block;
+		height: 100%;
+		line-height: 38px;
+		padding-top:2px;
+		a{
+			color: inherit;
+			display: inline-block;
+			position: relative;;
+		}
+	}
+	 .on{
+		border-bottom: 2px solid $red;
+		color:$theme;
+	} 
+}
+

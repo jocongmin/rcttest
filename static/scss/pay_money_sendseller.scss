@@ -1,0 +1,69 @@
+#pay-money-sendseller {
+    color: $fnormal;
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: $bor;
+    background:#fff;
+    line-height: 18px;
+    .seller {
+        flex: 4;
+        color: $fnormal;
+        em {}
+    }
+    .change-btn {
+        text-align: right;
+        .re-select {
+            text-decoration: none;
+            color: #fff;
+            background: $theme;
+            padding: 5px 12px;
+            border-radius: 3px;
+        }
+    }
+    .re-change {
+        font-size: 13px;
+        position: relative;
+        color: #c7c7c7;
+        i {
+            position: absolute;
+            top: -9px;
+        }
+    }
+    .order-action {
+        position: relative;
+        top: 0px;
+    }
+    .btn-1 {
+        border: 1px solid $red;
+        height: 24px;
+        padding: 0 12px;
+        line-height: 24px;
+        border-radius: 4px;
+        color: $red;
+        margin-right: 6px;
+        display: inline-block;
+    }
+    .to-btn {
+        background: $theme;
+        color: white;
+        font-size: 14px;
+        border-radius: 4px;
+        display: inline-block;
+        height: 24px;
+        padding: 0 18px;
+        line-height: 24px;
+    }
+    .span {
+        color: $red;
+        line-height: 29px;
+    }
+}
+
+.order-blue {
+    * {
+        color: $theme;
+    }
+    .re-change {
+        text-decoration: underline;
+    }
+}

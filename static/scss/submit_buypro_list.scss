@@ -1,0 +1,104 @@
+#submit-buypro-list {
+    background: white;
+    .title {
+        line-height: 23px;
+        padding: 10px 0;
+        margin: 0 10px;
+        color: $red;
+        font-size: 14px;
+        border-bottom: $bor;
+        .icon {
+            @extend .bg-p-icon-tit;
+            zoom: 0.5;
+            display: inline-block;
+            position: relative;
+            top: 10px;
+        }
+    }
+    .pic {
+        display: block;
+        height: 69px;
+        width: auto;
+        margin-right: 10px;
+        img {
+            max-width: 84px;
+            max-height: 84px;
+        }
+    }
+    em {
+        text-align: right;
+    }
+    .n {
+        position: absolute;
+        top: 22px;
+        right: -1px;
+    }
+    .item {
+        /* border-bottom: $bor; */
+        padding: 10px 0;
+        margin: 0 10px;
+        border-bottom: 1px solid $bcolr;
+        /*  .main-item{
+           padding-bottom:10px;
+                } */
+    }
+    .info {
+        position: relative;
+        flex: 3;
+        color: $fnormal;
+        .tit {
+            span {
+                color: $fnormal;
+                font-size: 14px;
+                max-height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                height: 36px;
+                line-height: 19px;
+                flex: 1.3;
+            }
+            em {
+                color: $flight;
+                position: relative;
+                flex: 0.5;
+            }
+        }
+    }
+    .guige {
+        color: $fontc;
+        position: absolute;
+        bottom: 0px;
+    }
+    .much {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        span {
+            font-size: 15px;
+        }
+        em {
+            color: $red;
+            font-size: 16px;
+        }
+    }
+    .frei {
+        color: $fnormal;
+        text-align: right;
+        font-size: 13px;
+        padding-bottom: 5px;
+        position: relative;
+        padding-right: 10px;
+    }
+    .left {
+        width: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .check {
+        margin:auto;
+        margin-right: 10px;
+    }
+}

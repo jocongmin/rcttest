@@ -1,0 +1,25 @@
+#balance{
+  max-width:640px;
+  @extend .bg-white;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:42px;
+  margin:auto;
+  text-align: center;
+  overflow:auto;
+  padding-top:37px;
+  i{
+    display: inline-block;
+    @extend .bg-yue-coin-03;
+    zoom:0.6;
+  }
+  p{
+    font-size:31px;
+    color:$fweight;
+    text-align: center;
+    font-weight:bold;
+    margin:15px 0 15px 0;
+  }
+}

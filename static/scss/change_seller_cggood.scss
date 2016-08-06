@@ -1,0 +1,47 @@
+#change-seller-cggood {
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    ul {
+        float: left;
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: hidden;
+        padding-left: 10px;
+        .box {
+            white-space: nowrap;
+            padding-bottom: 0!important;
+        }
+        li {
+            display: inline-block;
+            padding: 5px 9px;
+            border: $bor;
+            border-radius: 3px;
+            margin-right: 1rem;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            color:$fnormal;
+        }
+        .on {
+            background: $red;
+            color: white;
+        }
+    }
+    .right {
+        width: 8%;
+        float: right;
+        text-align: center;
+        border-left: 1px solid #dcdcdc;
+        line-height: 42px;
+        em {
+            position: relative;
+            left: 10px;
+            top:4px;
+            zoom: 0.5;
+            display: inline-block;
+            @extend .bg-goright;
+        }
+    }
+}

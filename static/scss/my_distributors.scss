@@ -1,0 +1,47 @@
+.fill-title{
+  font-size:15px;
+  color:$fweight;
+  text-align: center;
+  padding:10px 0;
+  border-bottom:1px solid $bcolr;
+}
+.position_rel{
+  position:relative;
+}
+.header-img{
+  img{
+    width:100%;
+    vertical-align: middle;
+  }
+}
+.user{
+  border-bottom:1px solid $bcolr;
+  padding:12px;
+  label{
+    width:83px;
+    font-size:14px;
+    color:$fnormal;
+    padding-left:3px;
+  }
+  input,textarea{
+    width:70%;
+    color:$fnormal;
+    border:none;
+    vertical-align: middle;
+    font-size:14px;
+  }
+  ::-webkit-input-placeholder{
+    font-size:14px;
+    color:$flight;
+  }
+}
+#distributors{
+  .content-center{
+    background:#ffffff;
+  }
+  .content-bottom{
+    background:#ffffff;
+    margin-top:10px;
+    margin-bottom: 64px;
+  }
+}

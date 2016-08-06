@@ -1,0 +1,61 @@
+#myadviser-index-top {
+    position: relative;
+    .lunbo {
+        position: relative;
+        text-align: center;
+        height: 170px;
+        background: url(../img/mygw-top-bg.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .tx {
+        width: 70px;
+        border-radius: 100%;
+        border: 5px solid #ffffff;
+        height: 70px;
+    }
+    .name {
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        color: #888888;
+    }
+    .tx-box {
+        position: absolute;
+        top: 16px;
+        width: 100%;
+    }
+    .pic {
+        display: inline-block;
+        position: relative;
+    }
+    .pj-list {
+        width: 100%;
+        display: inline-block;
+        height: 62px;
+        position: relative;
+        top: 100px;
+        overflow: hidden;
+        overflow-x: scroll;
+        ul {
+            height: 100%;
+            width: auto;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+            li {
+                float: left;
+                background: rgba(146, 143, 142, 0.6);
+                color: white;
+                font-size: 12px;
+                padding: 5px 10px;
+                margin-right: 15px;
+                border-radius: 17px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

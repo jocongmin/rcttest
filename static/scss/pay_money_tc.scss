@@ -1,0 +1,123 @@
+#pay-money-tc {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: #F6F6F6;
+    padding-bottom: $footerHeight;
+    .tit,
+    .item {
+        padding: 15px 0 20px 0;
+        font-size: 15px;
+    }
+    .tit {
+        padding-left: 10px;
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .way {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        color: $fnormal;
+    }
+    .item {
+        background: white;
+        border-bottom: $bor;
+        padding-left: 10px;
+        ;
+        &:last-child {
+            border-bottom: none;
+        }
+        i {
+            float: right;
+            margin-right: 48px;
+            position: relative;
+            top: 15px;
+        }
+        em {
+            position: relative;
+            top: 9px;
+            margin-right: 12px;
+            display: inline-block;
+            zoom: 0.6;
+        }
+    }
+    .rest {
+        color: $fnormal;
+        em {
+            @extend .bg-p-icon-m;
+        }
+        .rs {
+            font-size: 12px;
+            color: $fnormal;
+        }
+    }
+    .weixin {
+        em {
+            @extend .bg-p-icon-wx;
+        }
+    }
+    .sure {
+        background: $theme;
+        color: white !important;
+        text-align: center;
+        line-height: $footerHeight;
+        font-size: 16px;
+        /* position: fixed; */
+        /* left: 0; */
+        /* bottom: 0; */
+        width: 100%;
+        display: block;
+        flex: 0.5;
+    }
+    .sure-box {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-top: $bor;
+    }
+    .pri {
+        text-align: left;
+        line-height: $footerHeight;
+        font-size: 14px;
+        background: white;
+        padding-left: 16px;
+        box-sizing: border-box;
+        color: $fnormal;
+        ;
+        .pi {
+            font-size: 16px;
+            color: $red;
+            font-weight: bold;
+        }
+    }
+    .clos {
+        text-align: center;
+        font-size: 38px;
+        color: $fnormal;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-weight: lighter;
+        visibility: hidden;
+        &:after {
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            position: absolute;
+            right: 0px;
+            top: 15px;
+            background: url(../img/pingjia_close_03.png) no-repeat;
+            background-size: 100% 100%;
+            width: 20px;
+            height: 20px;
+            zoom: 0.8;
+        }
+    }
+    .tj {
+        flex: 1;
+    }
+}

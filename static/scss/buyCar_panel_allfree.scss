@@ -1,0 +1,24 @@
+#buyCar-panel-allfree {
+    background: #FFF6F7;
+    font-size: 13px;
+    .d1 {
+        color:$fnormal;
+        font-size: 14px;
+        padding: 13px 10px;
+    }
+    .con {
+        @extend .bg-p-icon-car;
+        display: inline-block;
+        float: left;
+        position: relative;
+        top: -1px;
+        zoom: 0.8;
+        margin-right: 10px;
+    }
+    a {
+        color: $theme;
+        line-height: 47px;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
+}

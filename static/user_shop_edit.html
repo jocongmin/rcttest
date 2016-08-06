@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>店铺信息编辑</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0, minimun-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/auto_rem.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="top-bar top-bar-on" id="top-bar">
+        <a href="javascript:history.go(-1)"><em class="bk"></em></a>
+        <span class="tit">店铺信息编辑</span>
+        <a href="index.html"><em class="hm"></em></a>
+        <em class="sr unsee"></em>
+    </div>
+    <form id="mainForm">
+        <div id="store-info">
+            <div class="store-pic">
+                <img src="img/tou01.png">
+            </div>
+            <div class="Introduction">
+                <div class="Introduction-title">简介:</div>
+                <div class="Introduction-text">
+                    <textarea placeholder="请输入文字"></textarea>
+                </div>
+            </div>
+            <div class="line-empty"></div>
+            <div class="address-info clearfix bd">
+                <div>店铺名称:</div>
+                <div>
+                    <input type="text" placeholder="请输入店铺名称">
+                </div>
+            </div>
+            <div class="address-info clearfix bd mt5">
+                <div>地区信息</div>
+                <div>
+                    <input type="text" placeholder="选择地区">
+                </div>
+            </div>
+            <div class="address-info clearfix bd">
+                <div>详细地址</div>
+                <div>
+                    <textarea placeholder="街道门牌信息(不包含省份和城市)"></textarea>
+                </div>
+            </div>
+        </div>
+        <a class="comm-btn" href="adress_manage.html">保存</a>
+    </form>
+    <!-- 蒙板 用样式名 unsee隐藏-->
+    <div id="mengb" class="">
+        <div id="inTip" class="">
+            您的店名已经被注册了
+            <!-- 请输入正确的姓名 -->
+            <!-- 请选择地区 -->
+            <!-- 请输入街道门牌信息 -->
+            <!-- 保存成功 -->
+            <!-- 保存失败 -->
+        </div>
+    </div>
+    <!-- 蒙板 -->
+</body>
+
+</html>

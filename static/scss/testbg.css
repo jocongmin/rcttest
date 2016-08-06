@@ -1,0 +1,24 @@
+.bg1{
+	background: url(../img/icon/bar-home.png) no-repeat;
+	width:50px;
+	height: 50px;
+	background-size: 106px;
+}
+.bg2{
+	background: url(../img/icon/bar-bk.png) no-repeat;
+	width:50px;
+	height: 50px;
+	background-size: 106px;
+}
+.bg3{
+	background: url(../img/icon/bar-sr.png) no-repeat;
+	width:50px;
+	height: 50px;
+	background-size: 106px;
+}
+.bg4{
+	background: url(../img/icon/car-on.png) no-repeat;
+	width:50px;
+	height: 50px;
+	background-size: 106px;
+}

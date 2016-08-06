@@ -1,0 +1,228 @@
+#tc-choice {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    .over-box {
+        max-height: 12rem;
+        overflow-y: scroll;
+    }
+    .pro {
+        margin-bottom: 12px;
+        position: relative;
+    }
+    .pic {
+        margin-right: 12px;
+        position: absolute;
+        top: -25px;
+        left: 5px;
+        width: 70px;
+        img {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            outline: 5px solid #eeeeee;
+        }
+    }
+    .info {
+        width: auto;
+        margin-left: 90px;
+        margin-right: 30px;
+        line-height: 17px;
+        h3 {
+            font-size: 14px;
+            color: $fweight;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        span {
+            color: $theme;
+            font-size: 11px;
+            font-family: arial;
+            font-weight: bold;
+        }
+        p {
+            color: $fnormal;
+            font-size: 11px;
+        }
+    }
+    .close {
+        display: inline-block;
+        position: absolute;
+        right: -3px;
+        top: -3px;
+        background: url(../img/pingjia_close_03.png) no-repeat;
+        background-size: 100% 100%;
+        width: 20px;
+        height: 20px;
+    }
+    .b-num {
+        margin-bottom: 45px;
+    }
+    .tit {
+        color: $fweight;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .special {
+        margin-bottom: 15px;
+        span {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            color: $flight;
+            border: 1px solid $flight;
+            margin-right: 10px;
+            padding-top: 6px;
+            width: 56px;
+            text-align: center;
+        }
+        .on {
+            color: $theme;
+            border: 1px solid $theme;
+        }
+        .have-on {
+            color: $flight;
+            border: 1px solid $flight;
+        }
+        .empty {
+            color: #ebebeb;
+            border: 1px solid #f5f5f5;
+        }
+    }
+    .sure {
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        line-height: 45px;
+        margin-left: -10px;
+    }
+    .sure-on {
+        background: $theme;
+    }
+    .sure-no {
+        background: #bebebe;
+    }
+    .numc {
+        height: 30px;
+        * {
+            float: left;
+        }
+        em {
+            line-height: 22px;
+            width: 45px;
+            display: inline-block;
+            border: 1px solid #dadada;
+            text-align: center;
+            padding: 3px 0;
+            font-size: 22px;
+            color: #959595;
+        }
+        .on {
+            color: #f84a4a;
+        }
+        .emless {
+            border-radius: 2px 0 0 2px;
+        }
+        .emmore {
+            border-radius: 0 2px 2px 0;
+        }
+        .input-span {
+            display: inline-block;
+            width: 45px;
+            padding: 5px 5px;
+            line-height: 18px;
+            border-width: 1px 0;
+            border-style: solid;
+            border-color: #dadada;
+            float: left;
+            text-align: center;
+            color: #000;
+            outline: 0;
+            border-radius: none!important;
+        }
+    }
+}
+
+#buy-btn {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    font-size: 16px;
+    color: white;
+    bottom: 0px;
+    text-align: center;
+    height: $footerHeight;
+    line-height: $footerHeight;
+    .add {
+        background: #f6f4f5;
+    }
+    .fast-buy {
+        background: $pink;
+    }
+    .add-cart {
+        background: $theme;
+    }
+    .save {
+        width: 50%;
+        text-align: center;
+        em {
+            position: relative;
+            top: 9px;
+            @extend .bg-like;
+            zoom: 0.5;
+            display: inline-block;
+            width: 45px!important;
+        }
+        .on {
+            @extend .bg-like-on;
+        }
+    }
+    .pri-all {
+        font-size: 15px;
+        color: $theme;
+        margin-right: 10px;
+    }
+    .car-num {
+        position: relative;
+        top: 8px;
+        left: 10%;
+        height: 40px;
+        width: 50%;
+        text-align: center;
+        zoom: 0.9;
+        em {
+            @extend .bg-d-gwc-r;
+            display: inline-block;
+            zoom: 0.7;
+            position: relative;
+        }
+        i {
+            position: absolute;
+            top: -6px;
+            left: 48%;
+            margin-left: 3px;
+            background: #f98ca3;
+            width: 22px;
+            height: 22px;
+            line-height: 24px;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 10px;
+            border-radius: 100%;
+            font-family: arial;
+            text-align: center;
+        }
+    }
+}

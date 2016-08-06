@@ -1,0 +1,38 @@
+#my-adv-own {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    z-index: 999;
+    .car {
+        background-color: #f98ca3;
+        background-image: url(../img/d-gwc-white.png);
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: 9px 12px;
+        bottom: 6px;
+        right: -18px;
+        width: 40px;
+        height: 40px;
+        background-size: 20px;
+        margin-bottom: 5px;
+        i {
+            position: absolute;
+            right: 5px;
+            top: 4px;
+            background: white;
+            color: #f98ca3;
+            border-radius: 100%;
+            padding: 3px;
+            zoom: 0.7;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    .mainpage {
+        @extend .bg-myown;
+        zoom: 0.9;
+    }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>订单详情</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0, minimun-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/auto_rem.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-bar top-bar-on" id="top-bar">
+        <a href="javascript:history.go(-1)"><em class="bk"></em></a>
+        <span class="tit">订单详情</span>
+        <a href="index.html"><em class="hm"></em></a>
+        <em class="sr unsee"></em>
+    </div>
+    <div class="shop-box">
+        <section id="order-detail-info">
+            <div class="item">
+                <i class="icon icon-s"></i>
+                <label for="">订单状态 ：</label>
+                <span class="fh">未付款</span>
+                <!-- <span class="fh">待发货</span>
+                <span class="fh">已发货</span>
+                <span class="fh">已完成</span>
+                <span class="fh">已关闭，取消订单</span>
+                <span class="fh">已关闭，退款成功</span>
+                
+                <span class="fh">退款中</span>
+                 -->
+            </div>
+            <div class="item">
+                <i class="icon icon-t"></i>
+                <label for="">退款原因 ：</label>
+                <span class="tk">七天无理由退货</span>
+                <i class="s-wl s-on"></i>
+                <div class="wl-info">
+                    <p class="word">七天无理由退货</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="icon icon-d"></i>
+                <label for="">快递单号 ：</label>
+                <span class="wl">韵达65465465465</span>
+                <i class="s-wl s-on"></i>
+                <div class="wl-info">
+                    <p class="word">暂无物流信息</p>
+                </div>
+            </div>
+        </section>
+        <section id="submit-address" class="flex">
+            <div class="man flex-item">
+                <!--                 <div class="add">
+                    <a href="add_address.html"><i class="ic"></i> 添加地址</a>
+                </div> -->
+                <div>
+                    <div class="item">周星驰 1546856565</div>
+                    <div class="item2">福建省深刻理解的罚款收据上看见付款582号</div>
+                </div>
+                <!-- 注释的是有地址的情况 -->
+            </div>
+            <!--            <div class="edit">
+                <a class="ai" href="adress_manage.html"></a>
+            </div> -->
+        </section>
+        <section id="submit-buypro-list">
+            <div class="title">
+                <span class="icon"></span> 商品明细
+            </div>
+            <div class="item">
+                <div class="main-item flex">
+                    <div class="pic">
+                        <img src="img/submit-pro.png">
+                    </div>
+                    <div class="info flex-item">
+                        <div class="tit flex">
+                            <span class="name flex-item">
+                        蜂蜜滋养组蜂蜜滋养组蜂蜜滋养组
+                    </span>
+                            <em class="flex-item">
+                        ￥50.00
+                        <i class="n">×1</i>
+                    </em>
+                        </div>
+                        <div class="guige">
+                            规格:10片/每袋
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main-item flex">
+                    <div class="pic">
+                        <img src="img/submit-pro.png">
+                    </div>
+                    <div class="info flex-item">
+                        <div class="tit flex">
+                            <span class="name flex-item">
+                        蜂蜜滋养组
+                    </span>
+                            <em class="flex-item">
+                        ￥50.00
+                        <i class="n">×1</i>
+                    </em>
+                        </div>
+                        <div class="guige">
+                            规格:10片/每袋
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pay-money-pribar">
+            <div class="d1">
+                <i class="icon1"></i> 商品金额
+                <em>￥134.00</em>
+            </div>
+            <div class="d1">
+                <i class="icon ps-d1"></i> 邮费
+                <em>￥0.00(包邮)</em>
+            </div>
+            <div class="d1">
+                <i class="icon3"></i> 店铺优惠
+                <em>-￥40.00</em>
+            </div>
+            <div id="order-detail-allmoney">
+                <div class="p">
+                    实付款 : <i class="themef">￥89.22</i>
+                </div>
+            </div>
+        </section>
+        <a href="">
+            <div class="item-bar">商品评价 <i>&gt;</i></div>
+        </a>
+        <section id="order-detail-allinfo">
+            <div class="item">
+                <label for="">订单编号 : </label>DFR46546546546546
+            </div>
+            <div class="item">
+                <label for="">创建时间 : </label>2015-02-02 12:12
+            </div>
+            <!-- <div class="item">
+                <label for="">关闭订单时间 : </label>2015-02-02 12:12
+            </div> -->
+            <div class="item">
+                <label for="">付款时间 : </label>2015-02-02 12:12
+            </div>
+            <!-- <div class="item">
+                <label for="">申请退款/退货时间 : </label>2015-02-02 12:12
+            </div> -->
+            <div class="item">
+                <label for="">发货时间 : </label>2015-02-02 12:12
+            </div>
+            <div class="item">
+                <label for="">签收时间 : </label>2015-02-02 12:12
+            </div>
+            <div class="item">
+                <label for="">交易完成时间 : </label>2015-02-02 12:12
+            </div>
+            <div class="item">
+                <label for="">付款方式 : </label><span class="span">余额支付</span>
+            </div>
+            <!-- <div class="item">
+                <label for="">付款方式 : </label><span class="span">微信支付</span>
+            </div> -->
+            <div class="reback-btn-box clearfix">
+                <a href="" class="reback-btn red1">退款<!-- 退货 --></a>
+            </div>
+        </section>
+    </div>
+    <div id="order-btn" class="order-btn flex">
+        <!-- <a href="#" class="total flex-item">
+            共计:<em>￥400.00</em>
+        </a> -->
+        <a href="change_seller.html" class="flex-item">
+        </a>
+        <a href="#" class="red2 flex-item ">
+            关闭订单
+            <!-- 关闭订单 -->
+            <!-- 同意退款 -->
+        </a>
+        <a href="change_seller.html" class="red1 flex-item">
+           发货 
+        </a>
+    </div>
+    <section id="pay-money-tc" class="unsee">
+        <div class="tit">收银台 : <i class="clos">×</i></div>
+        <div class="way">
+            <div class="rest item">
+                <em></em>余额支付<span class="rs">(余额￥199.00)</span>
+                <i class="check check-on"></i>
+            </div>
+            <div class="weixin item">
+                <em></em>微信支付
+                <i class="check"></i>
+            </div>
+        </div>
+        <div class="sure-box flex">
+            <div class="pri flex-item">
+                共计 : <i class="pi">￥89.60</i>
+            </div>
+            <a href="pay_success.html" class="sure flex-item">
+            确定
+           </a>
+        </div>
+    </section>
+    <div class="mask unsee"></div>
+</body>
+
+</html>

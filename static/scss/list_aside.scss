@@ -1,0 +1,54 @@
+    #list-aside {
+        position: fixed;
+        font-size: 14px;
+        color: white;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: url('../img/l-sidbg.png') repeat;
+        border-right: 1px solid #d2d2d2;
+        z-index: 99;
+        width: 100%;
+        overflow-y: scroll;
+        .on {
+            background: #f84343!important;
+        }
+        .btn {
+            margin-top: 40px;
+            span {
+                display: inline-block;
+                padding: 8px;
+                text-align: center;
+                width: 100%;
+                background: #f84343;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+            }
+        }
+        .change-brand {
+            margin-top: 30px;
+            a {
+                padding: 14px 0px;
+                display:block;
+                border-radius: 5px;
+                width: 100%;
+                color: $fnormal;
+                border-bottom: 1px solid #efefef;
+                padding-left: 13%;
+                font-size: 14px;
+                &:last-child {
+                    border-bottom: none!important;
+                }
+            }
+            .tit {
+                font-size: 16px !important;
+                color: $fweight !important;
+                padding-left: 6.3%!important;
+            }
+            .on-theme{
+                color: $theme;
+            }
+        }
+    }

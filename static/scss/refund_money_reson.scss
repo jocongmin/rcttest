@@ -1,0 +1,36 @@
+#refund-money-reson {
+    background: white;
+    color: $fnormal;
+    font-size: 14px;
+    .item {
+        padding: 15px 10px;
+        border-bottom: 1px solid #dcdcdc;
+        background-color: white;
+        i {
+            color: $red;
+            font-size: 22px;
+            line-height: 5px;
+            position: relative;
+            top: 6px;
+        }
+        em {
+            @extend .bg-right-more;
+            zoom: 0.5;
+            float: right;
+            opacity: 0.5;
+        }
+    }
+    label {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    input {
+        width: 63%;
+        font-size: 14px;
+        color: $flight;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+        color: $flight;
+    }
+}

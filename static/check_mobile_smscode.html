@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>余额支付</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0, minimun-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/auto_rem.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="top-bar top-bar-on" id="top-bar">
+        <em class="bk"></em>
+        <span class="tit">余额支付</span>
+        <em class="hm"></em>
+    </div>
+    <form id="mainForm">
+        <div class="container">
+            <div id="user-panel">
+                <div class="user clearfix">
+                    <label class="fl">手机号</label>
+                    <input type="text" placeholder="请输入手机号码" />
+                </div>
+                <div class="user clearfix">
+                    <label class="fl">短信验证</label>
+                    <input type="text" class="position" placeholder="请输入验证码" />
+                    <span class="checkCode c-no">获取验证码(60s)</span>
+                    <!--<span class="checkCode c-yes">获取验证码(60s)</span>-->
+                </div>
+                <a class="balance-a balance-v bcolor-default">下一步</a>
+                <!--<a class="balance-a balance-v bcolor-on">下一步</a>-->
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

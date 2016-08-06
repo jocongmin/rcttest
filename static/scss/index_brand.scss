@@ -1,0 +1,36 @@
+#index-brand {
+    background: white;
+    padding: 12px;
+    padding-bottom: 8px;
+    position: relative;
+    ul {
+        white-space: nowrap;
+        text-align: left;
+        li {
+            width: 24%;
+            float: left;
+            display: inline;
+            position: relative;
+            margin-right: 1.3%;
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                display: inline-block;
+                border-radius: 2px;
+                height: 100%;
+                width: 100%;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+    .act-link {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 56px;
+        zoom: 0.6;
+        opacity: 0.6;
+        @extend .bg-act-logo-link;
+    }
+}

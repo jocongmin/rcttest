@@ -1,0 +1,32 @@
+$bor:1px solid #dcdcdc;
+#order-btn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: $footerHeight;
+	border-top: $bor;
+	text-align: center;
+	background: white;
+	line-height: $footerHeight;
+	font-size: 16px;
+	.total{
+		color: $fnormal;
+		text-align:left;
+		padding-left:10px;
+		box-sizing:border-box;
+		font-size:14px;
+		em{
+			font-weight: bold;
+			color: $theme;
+			font-size:16px;
+		}
+	}
+	.sub-order{
+		color: white;
+		background: $theme;
+		flex:0.5;
+	}
+	.on{
+		background: #ededed;
+	}
+}

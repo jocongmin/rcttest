@@ -1,0 +1,63 @@
+.borNo {
+    border-bottom: none!important;
+}
+
+.nmore {
+    text-align: center;
+    color: $flight;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+#pj-li {
+    padding: 10px 10px;
+    border-bottom: 1px solid $bcolr;
+    background: white;
+    .head {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        text-align: center;
+        border-radius: 50px;
+    }
+    .pj {
+        position: relative;
+        top: 7px;
+        ;
+    }
+    .box {
+        margin-bottom: 5px;
+        img {
+            zoom: 0.6;
+        }
+    }
+    .name-time {
+        margin-bottom: 5px;
+    }
+    .name {
+        font-size: 14px;
+        line-height: 35px;
+        margin-left: 10px;
+        color: $fweight;
+    }
+    .time {
+        text-align: right;
+        color: $flight;
+    }
+    .pj-word {
+        font-size: 13px;
+        color: $fnormal;
+        padding-bottom: 7px 0;
+    }
+    .reply {
+        font-size: 13px;
+        padding: 7px 0;
+        border-top: 1px solid $bcolr;
+        em {
+            color: $theme;
+        }
+        span {
+            color: $fnormal;
+        }
+    }
+}

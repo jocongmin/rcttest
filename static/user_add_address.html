@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加新地址</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0, minimun-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/auto_rem.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="top-bar top-bar-on" id="top-bar">
+        <a href="javascript:history.go(-1)"><em class="bk"></em></a>
+        <span class="tit">添加新地址</span>
+        <a href="index.html"><em class="hm"></em></a>
+        <em class="sr unsee"></em>
+    </div>
+    <form id="mainForm">
+        <div id="c-address">
+            <div class="address-info clearfix bd">
+                <div>收货人</div>
+                <div>
+                    <input type="text" placeholder="请输入姓名">
+                </div>
+            </div>
+            <div class="address-info clearfix bd">
+                <div>联系电话</div>
+                <div>
+                    <input type="text" placeholder="请输入电话">
+                </div>
+            </div>
+            <div class="address-info clearfix bd">
+                <div>地区信息</div>
+                <div>
+                    <input type="text" placeholder="选择地区">
+                </div>
+            </div>
+            <div class="address-info clearfix bd">
+                <div>详细地址</div>
+                <div>
+                    <textarea placeholder="街道门牌信息(不包含省份和城市)"></textarea>
+                </div>
+            </div>
+            <p class="set-row">
+                <i class="check"></i>设为默认地址
+            </p>
+        </div>
+        <a class="comm-default" href="adress_manage.html">完成</a>
+<!--         <a class="comm-btn" href="adress_manage.html">完成</a> -->
+    </form>
+    <!-- 透明蒙板 用样式名 unsee隐藏-->
+    <div id="mengb" class="">
+        <div id="inTip" class="">请输入正确的收货人姓名
+            <!-- 请输入正确手机号码 -->
+            <!-- 请选择地区 -->
+            <!-- 请填写不含街道门牌号码 -->
+        </div>
+    </div>
+    <!-- 透明蒙板 -->
+</body>
+
+</html>

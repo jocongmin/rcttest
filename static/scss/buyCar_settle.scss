@@ -1,0 +1,38 @@
+.theme-color {
+    color: $theme;
+}
+
+#buyCar-settle {
+    width: 100%;
+    box-sizing: border-box;
+    @extend .bg-white;
+    @extend .position_fix_b;
+    bottom: $footerHeight;
+    div {
+        width: 70%;
+        height: $footerHeight;
+        line-height: $footerHeight;
+        &:first-child {
+            padding: 0 0 0 8px;
+            font-size: 14px;
+            color: $flight;
+        }
+        span {
+            color: $theme;
+        }
+    }
+    a {
+        width: 30%;
+        height: $footerHeight;
+        line-height: $footerHeight;
+        display: inline-block;
+        text-align: center;
+        @extend .fontStyle16;
+    }
+    .un-active {
+        background: #bebebe;
+    }
+    .be-active {
+        background: $theme;
+    }
+}

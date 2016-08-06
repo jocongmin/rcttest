@@ -1,0 +1,43 @@
+#store-info {
+    @extend .bg-white;
+    @extend .pt42;
+    padding-bottom: 10px;
+    .store-pic {
+        text-align: center;
+        background: #e5e5e5;
+        img {
+            width: 72px;
+            height: 72px;
+            vertical-align: middle;
+            border-radius: 100%;
+            margin: 15px 0;
+        }
+    }
+    .Introduction {
+        padding: 0 15px;
+        div {
+            padding: 10px 0;
+        }
+        .Introduction-title {
+            font-size: 14px;
+            float: left;
+        }
+        .Introduction-text {
+            padding-left: 10px;
+            width: auto;
+            margin-left: 35px;
+            textarea {
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                min-height: 50px;
+                border: none;
+                color: $fnormal;
+            }
+            ::-webkit-input-placeholder {
+                font-size: 14px;
+                color: $fnormal;
+            }
+        }
+    }
+}

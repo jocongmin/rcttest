@@ -1,0 +1,64 @@
+.fontblack {
+    color: #333333;
+}
+
+.mainfont {
+    color: $theme;
+}
+
+.fontgray {
+    color: #ccc;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+#reback-top {
+    padding: 25px 0 20px 0;
+    background: #fff;
+    margin-bottom: 20px;
+    .reback-tip {
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 0 12px;
+        font-weight: bold;
+        img {
+            width: 28px;
+            height: 28px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+    p {
+        padding: 0 12px 10px 12px;
+        label {
+            margin-right: 5px;
+        }
+    }
+    .balance-v {
+        margin-bottom: 0;
+    }
+}
+
+#reback-center {
+    padding: 0 12px;
+    p {
+        background: #fff;
+        padding: 10px 0;
+        font-size: 15px;
+        label {
+            display: inline-block;
+            width: 95px;
+            text-align: center;
+            color: #cccccc;
+            float: left;
+        }
+        span {
+            display: block;
+            margin-left: 95px;
+            width: auto;
+            padding-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+#recharge {
+    background: #ffffff;
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 640px;
+    .select-recharge {
+        width: 90%;
+        margin: auto;
+        a {
+            float: right;
+            font-size: 15px;
+            color: $theme;
+            text-decoration: underline;
+            &:hover {
+                color: $theme;
+            }
+            &:link {
+                color: $theme;
+            }
+            &:active {
+                color: $theme;
+            }
+        }
+    }
+}
+
+#recharge_success {
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 640px;
+    .success {
+        text-align: center;
+        padding-top: 70px;
+    }
+    .sf-i {
+        display: inline-block;
+    }
+    .success-icon {
+        @extend .bg-sf-success;
+        zoom: 0.5;
+    }
+    .fail-icon {
+        @extend .bg-sf-fail;
+        zoom: 0.5;
+    }
+    .apply-icon {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+    .apply-icon-fail {
+        background: url('../img/fail.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .bind-success {
+        background: url('../img/bind-success.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .apply-icon-no {
+        background: url('../img/cannot.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .apply-text {
+        text-align: center;
+        font-size: 18px;
+        color: $fweight;
+        margin-top: 15px;
+    }
+    .prompt {
+        text-align: center;
+        font-size: 18px;
+        color: $theme;
+        margin-bottom: 25px;
+    }
+    .recharge-text {
+        text-align: center;
+        font-size: 18px;
+        color: $fweight;
+        margin: 15px 0;
+    }
+    .recharge-s {
+        background: #f2f2f2;
+        font-size: 14px;
+        color: $fnormal;
+        padding: 13px 10px;
+        margin-bottom: 30px;
+        span {
+            &:nth-of-type(2) {
+                float: right;
+                color: $theme;
+            }
+        }
+    }
+}
+
+.money {
+    margin: 20px 0;
+    background: #f2f2f2;
+    padding: 12px 0;
+    .money-name {
+        font-size: 14px;
+        color: $fnormal;
+        width: 43px;
+        float: left;
+        text-align: center;
+    }
+    .money-num {
+        margin-left: 43px;
+        input {
+            border: none;
+            background: #f2f2f2;
+            color: $theme;
+        }
+        ::-webkit-input-placeholder {
+            font-size: 14px;
+            color: $flight;
+        }
+    }
+}

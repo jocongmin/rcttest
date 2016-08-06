@@ -1,0 +1,82 @@
+#submit-address {
+    font-size: 14px;
+    color: #333;
+    background: white;
+    border-bottom: $bor;
+    background: url(../img/sub-loca-bg.png) repeat-x;
+    background-size: contain;
+    position: relative;
+    padding: 20px 3px;
+    min-height: 80px;
+    align-items: center;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    .add {
+        position: relative;
+        color: $red;
+        .ic {
+            @extend .bg-add-dress;
+            display: inline-block;
+            zoom: 0.6;
+            opacity: 0.4;
+            margin-right: 9px;
+            position: relative;
+            top: 9px;
+        }
+    }
+    .item2 {
+        color: $fnormal;
+        margin-top: 5px;
+    }
+    em {
+        color: #a1a1a1;
+        flex: 1;
+        text-align: justify;
+        a {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    span {
+        flex: 3;
+    }
+    .man {
+        flex: 8;
+        padding-left: 15px;
+    }
+    .edit {
+        width: 30px;
+        height: 100%;
+        .ai {
+            @extend .bg-right-more;
+            flex: 1;
+            zoom: 0.7;
+            opacity: 0.5;
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            left: 10px;
+        }
+    }
+    p{
+        text-align:center;
+        color:$theme;
+    }
+}
+
+.wechat-loca {
+    .icon {
+        @extend .bg-wechat-logo;
+        display: inline-block;
+        zoom: 0.5;
+        margin-right: 5px;
+        position: relative;
+        top: 7px;
+    }
+    color:#8cc651;
+    text-align:right;
+    line-height: 14px;
+    position: relative;
+    top: -6px;
+    right: 10px;
+}
