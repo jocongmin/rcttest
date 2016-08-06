@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import Slider from './swiper.jsx'
 
 export class Home extends React.Component {
 	render() {
@@ -27,16 +28,6 @@ export const mapStateToProps = (state) => {
 export const mapDispatchToProps = {}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
-
-export class Slider extends React.Component {
-	render() {
-		return (
-			<div className="carousel" id="index-carousel">
-				<div className="lunbo"><img src="img/i-lunbo.png"/></div>
-			</div>
-		);
-	}
-}
 
 export class Brand extends React.Component {
 	render() {
