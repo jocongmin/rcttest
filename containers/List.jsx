@@ -12,8 +12,24 @@ import {
 } from '../components/List.jsx';
 
 export class List extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			loadData: false
+		}
+	}
+	loadState() {
+		let loadState = this.refs.loadNow.detect();
+		if (loadState) {
+			this.setState({loadData: true})
+		} else {
+			this.setState({loadData: false})
+		}
+	}
 	componentDidMount() {
+		window.addEventListener('scroll', this.loadState.bind(this), false);
 		(function () {
+			var aside = document.querySelector('#list-aside');
 			var winHeight = window.innerHeight;
 			var _first = document.querySelector('#first');
 			var mainbox = document.querySelector('#mainbox');
@@ -36,6 +52,7 @@ export class List extends React.Component {
 			}
 
 			function sidShow() {
+				aside.classList.remove('unsee');
 				var showHeight = winHeight;
 				rotateBox.setAttribute('style', 'height:' + showHeight + 'px;overflow-y:hidden;');
 				nav.style.display = 'none';
@@ -54,6 +71,7 @@ export class List extends React.Component {
 					mainbox.className = '';
 					nav.removeAttribute('style');
 					rotateBox.removeAttribute('style');
+					aside.classList.add('unsee');
 				}, 250);
 				rotateBox.className = 'rotateBox';
 			}
@@ -77,8 +95,8 @@ export class List extends React.Component {
 								<Sticky style={styles} onStickyStateChange={this.onStickyStateChange.bind(this)}>
 									<ListNav/>
 								</Sticky>
-								<ProList/>
-								<LoadNow/>
+								<ProList loadData={this.state.loadData}/>
+								<LoadNow ref='loadNow'/>
 								<BackTop/>
 							</div>
 						</div>

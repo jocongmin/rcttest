@@ -3,17 +3,17 @@
   "version": "0.0.0",
   "description": "Redux TodoMVC example",
   "scripts": {
-    "start": "webpack-dev-server --inline",
+    "start": "webpack-dev-server  --host 192.168.1.102 --inline",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register --require ./test/setup.js",
     "test:watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rackt/redux.git"
+    "url": "https://github.com/zhoucongmin/learn-project"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rackt/redux/issues"
+    "url": "https://github.com/zhoucongmin/learn-project/issues"
   },
   "homepage": "http://rackt.github.io/redux",
   "dependencies": {

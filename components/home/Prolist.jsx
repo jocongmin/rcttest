@@ -33,9 +33,59 @@ const $data = [
 		pri: '350.00'
 	}
 ];
+const $data2 = [
+	{
+		src: 'detail.html',
+		img: 'img/list-pro2.jpg',
+		tit: '葡萄籽靓晳系列 抗氧化护肤品 套装 淡化细纹补水',
+		pri: '350.00'
+	}, {
+		src: 'detail.html',
+		img: 'img/list-pro2.jpg',
+		tit: '葡萄籽靓晳系列 抗氧化护肤品 套装 淡化细纹补水',
+		pri: '350.00'
+	}, {
+		src: 'detail.html',
+		img: 'img/list-pro2.jpg',
+		tit: '葡萄籽靓晳系列 抗氧化护肤品 套装 淡化细纹补水',
+		pri: '350.00'
+	}, {
+		src: 'detail.html',
+		img: 'img/list-pro2.jpg',
+		tit: '葡萄籽靓晳系列 抗氧化护肤品 套装 淡化细纹补水',
+		pri: '350.00'
+	}, {
+		src: 'detail.html',
+		img: 'img/list-pro2.jpg',
+		tit: '葡萄籽靓晳系列 抗氧化护肤品 套装 淡化细纹补水',
+		pri: '350.00'
+	}, {
+		src: 'detail.html',
+		img: 'img/list-pro2.jpg',
+		tit: '葡萄籽靓晳系列 抗氧化护肤品 套装 淡化细纹补水',
+		pri: '350.00'
+	}
+];
 export default class Prolist extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			data: $data,
+			loadData: false
+		}
+	}
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.loadData) {
+			let newData = this.state.data.concat($data2);
+			if (newData.length >= 50) {
+				return
+			}
+			this.setState({data: newData})
+		}
+	}
 	render() {
-		const $items = $data.map((item, key) => {
+		console.log(this.state.data)
+		const $items = this.state.data.map((item, key) => {
 			return (
 				<Link to='/list' key={key}>
 					<li>

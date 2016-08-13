@@ -4,12 +4,12 @@ var webpack = require('webpack')
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: [
-      'webpack-dev-server/client?http://0.0.0.0:8080',//资源服务器地址
+      'webpack-dev-server/client?http://192.168.1.102:8080',//资源服务器地址
       'webpack/hot/only-dev-server',
        './index.jsx'
     ],
     output: {
-      publicPath: "http://192.168.1.102:9090",
+      publicPath: "http://192.168.1.102:8080",
       path: './',
       filename: "bundle.js"
     },

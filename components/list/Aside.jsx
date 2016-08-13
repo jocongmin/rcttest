@@ -3,7 +3,7 @@ import React, {PropTypes} from 'react';
 export default class Aside extends React.Component {
 	render() {
 		return (
-			<aside id="list-aside">
+			<aside id="list-aside" className="unsee">
 				<div id="sidTar">
 					<div className="change-brand clearfix">
 						<a className="tit">品牌</a>

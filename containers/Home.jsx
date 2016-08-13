@@ -11,6 +11,24 @@ import {
 	Slider
 } from '../components/Home.jsx'
 export class Home extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			loadData: false
+		}
+	}
+	loadData() {
+		let loadState = this.refs.loadNow.detect();
+		console.log(loadState)
+		if (loadState) {
+			this.setState({loadData: true})
+		} else {
+			this.setState({loadData: false})
+		}
+	}
+	componentDidMount() {
+		window.addEventListener('scroll', this.loadData.bind(this), false)
+	}
 	render() {
 		return (
 			<div id='homePage'>
@@ -18,8 +36,8 @@ export class Home extends React.Component {
 					<Slider/>
 					<Brand/>
 					<Banner/>
-					<Prolist/>
-					<LoadNow/>
+					<Prolist loadData={this.state.loadData}/>
+					<LoadNow ref='loadNow'/>
 					<BackTop/>
 				</main>
 				<Nav/>
