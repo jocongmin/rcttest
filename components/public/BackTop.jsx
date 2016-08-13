@@ -1,12 +1,14 @@
 import React, {PropTypes} from 'react';
-
+import ScrollToTop from 'react-scroll-up';
 export default class BackTop extends React.Component {
 	backTop() {
 		window.scroll(0, 0);
 	}
 	render() {
 		return (
-			<div className="backtop" onClick={this.backTop.bind(this)}></div>
+			<ScrollToTop showUnder={160}>
+				<div className="backtop"></div>
+			</ScrollToTop>
 		);
 	}
 }

@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
+import {StickyContainer, Sticky} from 'react-sticky';
 import {
 	ListNav,
 	ListSlider,
@@ -25,8 +26,6 @@ export class List extends React.Component {
 			var _body = document.querySelector('body');
 			var footerHeight = footerNav.offsetHeight;
 			var rotateBoxHeight = winHeight - footerHeight;
-			_body.setAttribute('style', 'height:' + winHeight + 'px;overflow-y:hidden;');
-			rotateBox.setAttribute('style', 'height:' + rotateBoxHeight + 'px;overflow-y:scroll');
 
 			_first.onclick = function (e) {
 				sidShow();
@@ -54,29 +53,40 @@ export class List extends React.Component {
 				setTimeout(function () {
 					mainbox.className = '';
 					nav.removeAttribute('style');
-					rotateBox.setAttribute('style', 'height:' + rotateBoxHeight + 'px;overflow-y:scroll');
+					rotateBox.removeAttribute('style');
 				}, 250);
 				rotateBox.className = 'rotateBox';
 			}
 		})()
 	}
+	onStickyStateChange() {
+		console.log('sflksdjflksdj')
+	}
 	render() {
+		const styles = {
+			zIndex: '99',
+			borderBottom: '1px solid #eee'
+		}
 		return (
-			<div id='list-page'>
-				<main id="mainbox">
-					<div id="rotateTar">
-						<div className="rotateBox">
-							<ListSlider/>
-							<ListNav ref='listnav'/>
-							<ProList/>
-							<LoadNow/>
-							<BackTop/>
+			<StickyContainer>
+				<div id='list-page'>
+					<main id="mainbox">
+						<div id="rotateTar">
+							<div className="rotateBox">
+								<ListSlider/>
+								<Sticky style={styles} onStickyStateChange={this.onStickyStateChange.bind(this)}>
+									<ListNav/>
+								</Sticky>
+								<ProList/>
+								<LoadNow/>
+								<BackTop/>
+							</div>
 						</div>
-					</div>
-				</main>
-				<Nav/>
-				<Aside/>
-			</div>
+					</main>
+					<Nav/>
+					<Aside/>
+				</div>
+			</StickyContainer>
 		)
 	}
 }

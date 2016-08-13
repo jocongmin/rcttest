@@ -68,5 +68,3 @@ export default class ListNav extends React.Component {
 		);
 	}
 }
-
-}
