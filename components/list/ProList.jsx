@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react';
+import {Link} from 'react-router'
 const $data = [
 	{
 		src: 'abc.html',
@@ -52,7 +53,7 @@ export default class ProList extends React.Component {
 		const $items = $data.map((item, key) => {
 			return (
 				<li key={key}>
-					<a href={item.src}>
+					<Link to="/">
 						<div className="item-box">
 							<div className="pic">
 								<img src={item.img}/>
@@ -67,7 +68,7 @@ export default class ProList extends React.Component {
 								<i className="ion"></i>
 							</div>
 						</div>
-					</a>
+					</Link>
 				</li>
 			)
 		})

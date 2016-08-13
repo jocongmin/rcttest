@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react';
+import {Link} from 'react-router';
 const $data = [
 	{
 		src: 'img/i-brand.png'
@@ -14,8 +15,10 @@ export default class Brand extends React.Component {
 	render() {
 		const $items = $data.map((item, key) => {
 			return (
-				<li key={key}>
-					<img src={item.src}/></li>
+				<Link to='/test' key={key}>
+					<li>
+						<img src={item.src}/></li>
+				</Link>
 			)
 		})
 		return (

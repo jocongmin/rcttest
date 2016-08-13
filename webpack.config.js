@@ -4,9 +4,15 @@ var webpack = require('webpack')
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: [
-        'webpack-hot-middleware/client',
-        './index'
+      'webpack-dev-server/client?http://0.0.0.0:8080',//资源服务器地址
+      'webpack/hot/only-dev-server',
+       './index.jsx'
     ],
+    output: {
+      publicPath: "http://192.168.1.102:9090",
+      path: './',
+      filename: "bundle.js"
+    },
     output: {
         path: path.join(__dirname, ''),
         filename: 'bundle.js',
@@ -14,13 +20,16 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': '"development"'
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
     module: {
         loaders: [{
             test: /\.(js|jsx)$/,
-            loaders: ['babel'],
+            loaders: ['react-hot','babel'],
             exclude: /node_modules/,
             include: __dirname
         }, {
