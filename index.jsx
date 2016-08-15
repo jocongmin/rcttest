@@ -9,8 +9,9 @@ import './js/auto_rem.js'
 import Home from './containers/Home.jsx'
 import List from './containers/List.jsx'
 import Test from './containers/test.jsx'
+import Detail from './containers/Detail.jsx'
+import EvaList from './containers/EvaList.jsx'
 import configureStore from './store/configureStore'
-
 const store = configureStore()
 
 export default class App extends React.Component {
@@ -22,6 +23,8 @@ export default class App extends React.Component {
 						<IndexRoute component={Home}/>
 						<Route path="list" component={List}/>
 						<Route path="home" component={Home}/>
+						<Route path="detail" component={Detail}/>
+						<Route path="evalist" component={EvaList}/>
 					</Route>
 				</Router>
 			</Provider>

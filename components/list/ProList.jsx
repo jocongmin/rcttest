@@ -87,8 +87,8 @@ export default class ProList extends React.Component {
 		console.log('render')
 		const $items = this.state.data.map((item, key) => {
 			return (
-				<li key={key}>
-					<Link to="/">
+				<Link to="/detail" key={key}>
+					<li>
 						<div className="item-box">
 							<div className="pic">
 								<img src={item.img}/>
@@ -103,8 +103,8 @@ export default class ProList extends React.Component {
 								<i className="ion"></i>
 							</div>
 						</div>
-					</Link>
-				</li>
+					</li>
+				</Link>
 			)
 		})
 		return (
