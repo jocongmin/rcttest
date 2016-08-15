@@ -6,7 +6,7 @@ export default class BackTop extends React.Component {
 	}
 	render() {
 		return (
-			<ScrollToTop showUnder={0}>
+			<ScrollToTop showUnder={150}>
 				<div className="backtop"></div>
 			</ScrollToTop>
 		);

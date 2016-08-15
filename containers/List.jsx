@@ -26,6 +26,12 @@ export class List extends React.Component {
 			this.setState({loadData: false})
 		}
 	}
+	shouldComponentUpdate(nextProps, nextStates) {
+		if (!nextStates.loadData) {
+			return false;
+		}
+		return true;
+	}
 	componentDidMount() {
 		window.addEventListener('scroll', this.loadState.bind(this), false);
 		(function () {
@@ -81,6 +87,7 @@ export class List extends React.Component {
 		console.log('sflksdjflksdj')
 	}
 	render() {
+		console.log('render-listpage')
 		const styles = {
 			zIndex: '99',
 			borderBottom: '1px solid #eee'

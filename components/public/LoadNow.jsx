@@ -12,8 +12,12 @@ export default class LoadNow extends React.Component {
 			return false;
 		}
 	}
+	shouldComponentUpdate() {
+		return false;
+	}
 	componentDidMount() {}
 	render() {
+		console.log('render loadingbox')
 		return (
 			<div id='loadState' ref='loadState' className="pullUp loading more">
 				<span className="pullUpIcon"></span>

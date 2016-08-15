@@ -57,21 +57,34 @@ export default class ProList extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			data: $data
+			data: $data,
+			nodata: false
 		}
 	}
 	componentWillReceiveProps(nextProps) {
 		if (nextProps.loadData) {
-			let newData = this.state.data.concat($data);
-			if (newData.length >= 60) {
-				return
-			}
 			setTimeout(() => {
+				console.log('moredata')
+				let newData = this.state.data.concat($data);
+				if (newData.length >= 50) {
+					this.setState({nodata: true})
+					return
+				}
 				this.setState({data: newData})
 			}, 500)
 		}
 	}
+	shouldComponentUpdate(nextProps, nextStates) {
+		if (!nextProps.loadData) {
+			return nextProps.loadData !== this.props.loadData;
+		}
+		if (nextStates.nodata) {
+			return false;
+		}
+		return true
+	}
 	render() {
+		console.log('render')
 		const $items = this.state.data.map((item, key) => {
 			return (
 				<li key={key}>

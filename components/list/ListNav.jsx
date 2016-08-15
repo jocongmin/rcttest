@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 
 export default class ListNav extends React.Component {
 	render() {
+		console.log('render listnav')
 		return (
 			<div id="list-nav-list" className="nav clearfix">
 				<ul className="flex">

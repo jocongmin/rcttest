@@ -26,6 +26,12 @@ export class Home extends React.Component {
 			this.setState({loadData: false})
 		}
 	}
+	shouldComponentUpdate(nextProps, nextStates) {
+		if (!nextStates.loadData) {
+			return false;
+		}
+		return true;
+	}
 	componentDidMount() {
 		window.addEventListener('scroll', this.loadData.bind(this), false)
 	}

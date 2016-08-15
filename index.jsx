@@ -1,5 +1,6 @@
 import 'babel-core/polyfill'
 import React from 'react'
+import FastClick from 'react-fastclick-alt'
 import {render} from 'react-dom'
 import {Router, Route, Link, hashHistory, IndexRoute} from 'react-router'
 import {Provider} from 'react-redux'
@@ -29,4 +30,5 @@ export default class App extends React.Component {
 };
 
 render(
-	<App/>, document.getElementById('root'))
+	<FastClick>
+	<App/></FastClick>, document.getElementById('root'))
