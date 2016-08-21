@@ -12,6 +12,17 @@ import {
 } from '../components/Detail.jsx';
 
 export class Detail extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			tcShow: false,
+			whichBtn: ''
+		}
+	}
+	showTc(which) {
+		console.log(which, 'which')
+		this.setState({tcShow: true, whichBtn: which})
+	}
 	render() {
 		return (
 			<div id='detail-page'>
@@ -25,8 +36,8 @@ export class Detail extends React.Component {
 				</div>
 				<SeeMore/>
 				<ProListImg/>
-				<BuyBtn/>
-				<TcBuy/>
+				<BuyBtn showTc={this.showTc.bind(this)}/>
+				<TcBuy which={this.state.whichBtn} show={this.state.tcShow}/>
 			</div>
 		);
 	}

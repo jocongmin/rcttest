@@ -15,10 +15,10 @@ export default class BuyBtn extends React.Component {
 						<em></em>
 					</div>
 				</div>
-				<a className="fast-buy flex-item">
+				<a onClick={this.props.showTc.bind(this, 'fastBuy')} className="fast-buy flex-item">
 					立即购买
 				</a>
-				<a className="add-cart flex-item">
+				<a onClick={this.props.showTc.bind(this, 'addCart')} className="add-cart flex-item">
 					加入购物车
 				</a>
 			</section>
