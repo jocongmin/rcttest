@@ -16,6 +16,7 @@ export class Home extends React.Component {
 		this.state = {
 			loadData: false
 		}
+		this.loadData=this.loadData.bind(this);
 	}
 	loadData() {
 		let loadState = this.refs.loadNow.detect();
@@ -33,7 +34,11 @@ export class Home extends React.Component {
 		return true;
 	}
 	componentDidMount() {
-		window.addEventListener('scroll', this.loadData.bind(this), false)
+		window.addEventListener('scroll', this.loadData)
+	}
+	componentWillUnMount(){
+		alert('skjfskdjfjs')
+		window.removeEventListener('scroll', this.loadData)
 	}
 	render() {
 		return (
@@ -42,7 +47,7 @@ export class Home extends React.Component {
 					<Slider/>
 					<Brand/>
 					<Banner/>
-					<Prolist loadData={this.state.loadData}/>
+					<Prolist scrollEvent={this.loadData} loadData={this.state.loadData}/>
 					<LoadNow ref='loadNow'/>
 					<BackTop/>
 				</main>

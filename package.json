@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Redux TodoMVC example",
   "scripts": {
-    "start": "webpack-dev-server  --host 192.168.1.102 --inline",
+    "start": "webpack-dev-server  --host 192.168.1.101 --inline",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register --require ./test/setup.js",
     "test:watch": "npm test -- --watch"
   },
@@ -37,6 +37,7 @@
     "react-addons-test-utils": "^0.14.0",
     "react-fastclick-alt": "^1.1.1",
     "react-hot-loader": "^1.3.0",
+    "react-mixin": "^3.0.5",
     "react-scroll-up": "^1.1.5",
     "react-sticky": "^5.0.5",
     "react-swipe": "^5.0.3",

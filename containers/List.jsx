@@ -17,6 +17,7 @@ export class List extends React.Component {
 		this.state = {
 			loadData: false
 		}
+		this.loadState=this.loadState.bind(this);
 	}
 	loadState() {
 		let loadState = this.refs.loadNow.detect();
@@ -33,7 +34,8 @@ export class List extends React.Component {
 		return true;
 	}
 	componentDidMount() {
-		window.addEventListener('scroll', this.loadState.bind(this), false);
+		window.scroll(0,0)
+		window.addEventListener('scroll', this.loadState, false);
 		(function () {
 			var aside = document.querySelector('#list-aside');
 			var winHeight = window.innerHeight;
@@ -86,6 +88,9 @@ export class List extends React.Component {
 	onStickyStateChange() {
 		console.log('sflksdjflksdj')
 	}
+	stopScroll(){
+		window.removeEventListener('scroll', this.loadState, false);
+	}
 	render() {
 		console.log('render-listpage')
 		const styles = {
@@ -102,7 +107,7 @@ export class List extends React.Component {
 								<Sticky style={styles} onStickyStateChange={this.onStickyStateChange.bind(this)}>
 									<ListNav/>
 								</Sticky>
-								<ProList loadData={this.state.loadData}/>
+								<ProList stopScroll={this.stopScroll.bind(this)} loadData={this.state.loadData}/>
 								<LoadNow ref='loadNow'/>
 								<BackTop/>
 							</div>

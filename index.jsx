@@ -19,13 +19,11 @@ export default class App extends React.Component {
 		return (
 			<Provider store={store}>
 				<Router history={hashHistory}>
-					<Route path="/">
-						<IndexRoute component={Home}/>
-						<Route path="list" component={List}/>
-						<Route path="home" component={Home}/>
-						<Route path="detail" component={Detail}/>
-						<Route path="evalist" component={EvaList}/>
-					</Route>
+					  <Route name='home' path="/" component={Home}/>
+						<Route name='list' path="list" component={List}/>
+						<Route name='home' path="home" component={Home}/>
+						<Route name='detail' path="detail" component={Detail}/>
+						<Route name='evalist' path="evalist" component={EvaList}/>
 				</Router>
 			</Provider>
 		);

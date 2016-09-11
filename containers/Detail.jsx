@@ -23,6 +23,9 @@ export class Detail extends React.Component {
 		console.log(which, 'which')
 		this.setState({tcShow: true, whichBtn: which})
 	}
+	componentDidMount(){
+		window.scroll(0,0)
+	}
 	render() {
 		return (
 			<div id='detail-page'>

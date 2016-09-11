@@ -83,11 +83,15 @@ export default class Prolist extends React.Component {
 			this.setState({data: newData})
 		}
 	}
+	unBindSroll(){
+		console.log('unbind')
+		window.removeEventListener('scroll', this.props.scrollEvent)
+	}
 	render() {
 		console.log(this.state.data)
 		const $items = this.state.data.map((item, key) => {
 			return (
-				<Link to='/list' key={key}>
+				<Link to='/list' onClick={this.unBindSroll.bind(this)} key={key}>
 					<li>
 						<div className="item-box">
 							<div className="pic">
