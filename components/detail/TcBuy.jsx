@@ -69,11 +69,7 @@ export default class TcBuy extends React.Component {
                         <div className="tit">
                             数量
                         </div>
-                        <div className="numc clearfix">
-                            <em className="emless fl">-</em>
-                            <span className="input-span fl on">1</span>
-                            <em className="emmore on fl">+</em>
-                        </div>
+                        <NumInput/>
                     </div>
                 </div>
                 <div onClick={this.sureAddBuy.bind(this)} className="sure sure-on">
@@ -82,6 +78,36 @@ export default class TcBuy extends React.Component {
             </section>
         );
     }
+}
+class NumInput extends React.Component {
+	constructor(props){
+		super(props);
+		this.state={
+			num:1
+		}
+	}
+	less(){
+		if(this.state.num<=1){
+			return
+		}
+		this.setState({
+			num:this.state.num-1
+		})
+	}
+	more(){
+		this.setState({
+			num:this.state.num+1
+		})
+	}
+	render(){
+		return(
+			<div className="numc clearfix">
+					<em onClick={this.less.bind(this)} className="emless fl">-</em>
+					<span className="input-span fl on">{this.state.num}</span>
+					<em onClick={this.more.bind(this)} className="emmore on fl">+</em>
+			</div>
+		)
+	}
 }
 
 class Gitem extends React.Component {
