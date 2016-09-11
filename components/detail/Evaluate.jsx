@@ -18,7 +18,7 @@ export default class Evaluate extends React.Component {
 					<span className="flex-item">商品评价(1980条)</span>
 				</div>
 				<EvaItem data={$data}/>
-				<Link to='/evalist' className="search-btn">
+				<Link to='evalist' className="search-btn">
 					查看全部评价
 				</Link>
 				<div className="eh18"></div>

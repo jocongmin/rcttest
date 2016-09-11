@@ -8,7 +8,8 @@ import {
 	SeeMore,
 	Slider,
 	TcBuy,
-	TopBar
+	TopBar,
+	BackTop
 } from '../components/Detail.jsx';
 
 export class Detail extends React.Component {
@@ -33,6 +34,7 @@ export class Detail extends React.Component {
 					<TopBar title='商品详情'/>
 					<Slider/>
 					<ProInfo/>
+					<BackTop/>
 				</div>
 				<div class="detail-center" id="detail-center">
 					<Evaluate/>

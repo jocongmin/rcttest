@@ -6,6 +6,7 @@ import SeeMore from './detail/SeeMore.jsx';
 import Slider from './detail/Slider.jsx';
 import TcBuy from './detail/TcBuy.jsx';
 import TopBar from './public/TopBar.jsx';
+import BackTop from './public/BackTop.jsx';
 export default {
 	BuyBtn,
 	Evaluate,
@@ -14,5 +15,6 @@ export default {
 	SeeMore,
 	Slider,
 	TcBuy,
-	TopBar
+	TopBar,
+	BackTop
 }
