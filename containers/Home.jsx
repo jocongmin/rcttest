@@ -40,6 +40,7 @@ export class Home extends React.Component {
         window.removeEventListener('scroll', this.loadData,false)
     }
     componentDidMount() {
+				window.scroll(0,0)
 			  this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave.bind(this))
         window.addEventListener('scroll', this.loadData,false)
     }
