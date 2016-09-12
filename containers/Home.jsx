@@ -35,13 +35,13 @@ export class Home extends React.Component {
         return true;
     }
     routerWillLeave(nextLocation) {
-			 let that=this;
-        window.removeEventListener('scroll', that.loadData)
+				console.log('homeleave')
+				console.log(nextLocation,'nextLocation')
+        window.removeEventListener('scroll', this.loadData,false)
     }
     componentDidMount() {
-				let that=this;
-        window.addEventListener('scroll', that.loadData)
-        this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave)
+			  this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave.bind(this))
+        window.addEventListener('scroll', this.loadData,false)
     }
     componentWillUnMount() {
         window.removeEventListener('scroll', this.loadData)

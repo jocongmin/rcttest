@@ -37,7 +37,7 @@ export class List extends React.Component {
 			window.removeEventListener('scroll', this.loadState)
 	}
 	componentDidMount() {
-		this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave)
+		this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave.bind(this))
 		window.scroll(0,0)
 		window.addEventListener('scroll', this.loadState, false);
 		(function () {
