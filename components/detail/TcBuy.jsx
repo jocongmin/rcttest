@@ -117,10 +117,9 @@ class Gitem extends React.Component {
 				on:false
 			}
 		}
-    classOn() {
-        this.setState({
-            on: !this.state.on
-        })
+    classOn(event) {
+				document.querySelector('#tc-choice .special em').classList.remove('on')
+        event.target.classList.add('on');
     }
     render() {
         if (this.props.has == 0) {
@@ -130,9 +129,7 @@ class Gitem extends React.Component {
         }
         if (this.props.has == 1) {
             return (
-                <em onClick={this.classOn.bind(this)} className={this.state.on
-                    ? 'on'
-                    : 'have-on'}>{this.props.guige}ml</em>
+                <em onClick={this.classOn.bind(this)} className='have-on'>{this.props.guige}ml</em>
             )
         }
     }

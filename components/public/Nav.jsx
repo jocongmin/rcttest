@@ -1,35 +1,36 @@
 import React, {PropTypes} from 'react';
-
+import {Link} from 'react-router';
 export default class Nav extends React.Component {
 	render() {
 		return (
 			<nav id="nav-footer">
 				<ul>
 					<li className="index on">
-						<a href="index.html">
+						<Link to='home'>
 							<em className="on"></em>
 							<br/>
-							主页</a>
+							主页</Link>
 					</li>
 					<li className="ident">
-						<a href="list.html">
+						<Link to='list'>
 							<em className=""></em>
 							<br/>
-							分类</a>
+							分类</Link>
 					</li>
 					<li className="buycar">
-						<a href="buy_car.html">
+						<Link to='detail'>
 							<em>
 								<i>2</i>
 							</em>
 							<br/>
-							购物车</a>
+							购物车</Link>
 					</li>
 					<li className="me">
-						<a href="my_page.html">
+						<Link to='my'>
 							<em></em>
 							<br/>
-							我的</a>
+							我的
+						</Link>
 					</li>
 				</ul>
 			</nav>

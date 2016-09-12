@@ -89,7 +89,7 @@ export default class ProList extends React.Component {
         console.log('render')
         const $items = this.state.data.map((item, key) => {
             return (
-                <Link to="/detail" onClick={this.props.stopScroll.bind(this)} key={key}>
+                <Link to="/detail" key={key}>
                     <li>
                         <div className="item-box">
                             <div className="pic">

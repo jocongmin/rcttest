@@ -1,17 +1,14 @@
 var path = require('path')
 var webpack = require('webpack')
-
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
-    entry: [
-      'webpack-dev-server/client?http://192.168.1.102:8080',//资源服务器地址
-      'webpack/hot/only-dev-server',
-       './index.jsx'
+    entry: [   'webpack-dev-server/client?http://192.168.1.102:8080', //资源服务器地址
+           'webpack/hot/only-dev-server',    './index.jsx'
     ],
     output: {
-      publicPath: "http://192.168.1.102:8080",
-      path: './',
-      filename: "bundle.js"
+        publicPath: "http://192.168.1.102:8080",
+        path: './',
+        filename: "bundle.js"
     },
     output: {
         path: path.join(__dirname, ''),
@@ -26,10 +23,13 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
+    query: {
+        plugins: ["transform-class-properties"]
+    },
     module: {
         loaders: [{
             test: /\.(js|jsx)$/,
-            loaders: ['react-hot','babel'],
+            loaders: ['react-hot', 'babel'],
             exclude: /node_modules/,
             include: __dirname
         }, {

@@ -33,7 +33,11 @@ export class List extends React.Component {
 		}
 		return true;
 	}
+	routerWillLeave(nextLocation) {
+			window.removeEventListener('scroll', this.loadState)
+	}
 	componentDidMount() {
+		this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave)
 		window.scroll(0,0)
 		window.addEventListener('scroll', this.loadState, false);
 		(function () {
@@ -88,9 +92,6 @@ export class List extends React.Component {
 	onStickyStateChange() {
 		console.log('sflksdjflksdj')
 	}
-	stopScroll(){
-		window.removeEventListener('scroll', this.loadState, false);
-	}
 	render() {
 		console.log('render-listpage')
 		const styles = {
@@ -107,7 +108,7 @@ export class List extends React.Component {
 								<Sticky style={styles} onStickyStateChange={this.onStickyStateChange.bind(this)}>
 									<ListNav/>
 								</Sticky>
-								<ProList stopScroll={this.stopScroll.bind(this)} loadData={this.state.loadData}/>
+								<ProList loadData={this.state.loadData}/>
 								<LoadNow ref='loadNow'/>
 								<BackTop/>
 							</div>
@@ -119,6 +120,10 @@ export class List extends React.Component {
 			</StickyContainer>
 		)
 	}
+}
+
+List.contextTypes = {
+    router: React.PropTypes.object.isRequired
 }
 
 export const mapStateToProps = (state) => {
