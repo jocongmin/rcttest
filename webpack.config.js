@@ -1,7 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'cheap-module-eval-source-map',//if you want to product app ,you need value is false
     entry: [   'webpack-dev-server/client?http://192.168.1.102:8080', //资源服务器地址
            'webpack/hot/only-dev-server',    './index.jsx'
     ],

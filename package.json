@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Redux TodoMVC example",
   "scripts": {
-    "start": "webpack-dev-server  --host 192.168.1.101 --inline",
+    "start": "webpack-dev-server  --host 192.168.0.5 --inline",
+    "product":"webpack -p",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register --require ./test/setup.js",
     "test:watch": "npm test -- --watch"
   },
